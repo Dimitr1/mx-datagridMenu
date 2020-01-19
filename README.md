@@ -1,6 +1,6 @@
 ## DataMenu
 ### V1.0
-    This is just a simple react contextMenu that renders the datagrid buttonbar when you right click the specified datagrid. Notting more.
+This is just a simple react contextMenu that renders the datagrid buttonbar when you right click the specified datagrid. Notting more.
 
 ## Features
 -   Show a context menu when u rightclick on a datagrid. This contextmenu renders the buttons that you have declared on the datagrid menu     bar (where the default Search button is displayed)
@@ -11,9 +11,9 @@
 -   It follows the buttons order from left to right.
 
 ## Usage
-1   Add the widget on a page. 
-2   Provide it with the gridname
-3   Enjoy!
+1.   Add the widget on a page. 
+2.   Provide it with the gridname
+3.   Enjoy!
 
 ## Demo project
 https://datamenu-sandbox.mxapps.io/index.html?profile=Responsive
@@ -22,4 +22,4 @@ https://datamenu-sandbox.mxapps.io/index.html?profile=Responsive
 -   It works with two datagrids. But a rightClick in datagrid A doesnt close the contextmenu in datagrid B.
 
 ## Extra
-Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect"
+Icons made by https://www.flaticon.com/authors/pixel-perfect
