@@ -1,0 +1,13 @@
+/*
+Place your custom CSS here
+*/
+.mx-contextMenu{
+    position: fixed;
+    z-index: 1;
+    width:100px;
+    
+}
+
+.mx-contextMenu-buttons{
+  
+}

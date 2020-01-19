@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="21south.datamenu.DataMenu" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Data Menu</name>
+    <description>context menu for a datagrid</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHESURBVFiF7Zc/SxxBGIefmT1H93RdOSwODg6DYAhccZVgEZRNL8FKaz3/nGnyBZQL+QCSwiaQXrDwUguCgk1SpA6BoJ3Nnd56py64k8JsEELIbLy9TeEPptp35nmYfdnlBcDxqhVVLDeFymog0SVUVqtiuel41QoA7szqCtJKHPzbkhnteGtLQhXLzeD0y8iwt05udgOhsiQZHXRo1Gu0DrZRhZIvhMpqHXQY2zpLHB4lvGlz8jqPsBRSBx2AnsEBZP8gAPo2QPaM+oc8CqQukDEpuv52TOvwPYS3ZqdKi+HpZQbGp7ojcPlph/bnXTN45GC73RPIvXyD/exFrBuwn84YlRoJSNtlsDxrBo+Z1JswdQGjV3Cx/47G3kasHsjNvcX1Xv291OhAIczA97dgtkdw93/mybYfG/KQfK86wH/QA6kLGDVh2Dnn6uthzA/RNNJ2uyPQqG/iH30wg/+M83yR0YWt7ggMTc4TXrVi3cDQ5LxRqZHAwPiU0Y/lX5J6Ez4KpC8QzQPRfNCLhDdtgLvBpC8/cQ7QqNd+PUga3vxYA6AvP+HjeNUKMpPacAqA460tqULJF5ZKfjy3lFaFUiuC/wCdU+GewNYyFAAAAABJRU5ErkJggg==</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="gridname" type="string" required="true">
+                <caption>Name of the grid</caption>
+                <description>Name of the grid to show the context menu</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
