@@ -61,7 +61,7 @@ class DataMenu extends Component {
         let buttonsbar = datagrid.getElementsByClassName("mx-grid-toolbar")[0]
         const buttons = Array.from(buttonsbar.getElementsByClassName("mx-button"))
         const buttonFilter = buttons.filter(button => !button.classList.contains("hideInMenu"))
-        const ContextButtons = buttonFilter.map((button)=> <ContextButton className={"mx-contextMenu-buttons"} updateVisibility={this.setHidden} key={button.id} nameButton={button.innerText} idButton={button.id} />)
+        const ContextButtons = buttonFilter.map((button)=> <ContextButton className={"mx-contextMenu-button"} updateVisibility={this.setHidden} key={button.id} nameButton={button.innerText} idButton={button.id} />)
 
     return <div className={"mx-contextMenu"} style={style}>
             {ContextButtons}

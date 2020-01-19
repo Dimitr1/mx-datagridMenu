@@ -16,7 +16,7 @@
 3   Enjoy!
 
 ## Demo project
-[link to sandbox]
+https://datamenu-sandbox.mxapps.io/index.html?profile=Responsive
 
 ## Issues, suggestions and feature requests
 -   It works with two datagrids. But a rightClick in datagrid A doesnt close the contextmenu in datagrid B.

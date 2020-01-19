@@ -7,7 +7,7 @@ export class ContextButton extends Component {
     }
     handleClick(){
         document.getElementById(this.props.idButton).click();
-        this.props.updateVisibility({x:0,y:0})
+        this.props.updateVisibility()
     }
     render() {
         console.log(this.props)
