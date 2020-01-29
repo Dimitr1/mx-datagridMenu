@@ -1,6 +1,6 @@
 ## DataMenu
 ### V1.0
-This is just a simple react contextMenu that renders the datagrid buttonbar when you right click the specified datagrid. Notting more.
+This is just a simple react contextMenu that renders the datagrid buttonbar when you right click the specified datagrid.
 
 ## Features
 -   Show a context menu when u rightclick on a datagrid. This contextmenu renders the buttons that you have declared on the datagrid menu     bar (where the default Search button is displayed)

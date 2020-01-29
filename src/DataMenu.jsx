@@ -54,19 +54,31 @@ class DataMenu extends Component {
         }
 
         let datagrid = document.getElementsByClassName(`mx-name-${this.props.gridname}`)[0]
+        if (datagrid){
+            try {
+                
+                    let content = datagrid.getElementsByClassName("mx-grid-content")[0]
+                    content.addEventListener('contextmenu', this.setVisible)  
+            
+                    let buttonsbar = datagrid.getElementsByClassName("mx-grid-toolbar")[0]
+                    const buttons = Array.from(buttonsbar.getElementsByClassName("mx-button"))
+                    const buttonFilter = buttons.filter(button => !button.classList.contains("hideInMenu"))
+                    const ContextButtons = buttonFilter.map((button)=> <ContextButton className={"mx-contextMenu-button"} updateVisibility={this.setHidden} key={button.id} nameButton={button.innerText} idButton={button.id} />)
+            
+                    return (<div className={"mx-contextMenu"} style={style}>
+                    {ContextButtons}
+                    </div>);
+            
+            } catch(error) {
+                console.error(error);
+                return (<div></div>)
+            }
         
-        let content = datagrid.getElementsByClassName("mx-grid-content")[0]
-        content.addEventListener('contextmenu', this.setVisible)  
-
-        let buttonsbar = datagrid.getElementsByClassName("mx-grid-toolbar")[0]
-        const buttons = Array.from(buttonsbar.getElementsByClassName("mx-button"))
-        const buttonFilter = buttons.filter(button => !button.classList.contains("hideInMenu"))
-        const ContextButtons = buttonFilter.map((button)=> <ContextButton className={"mx-contextMenu-button"} updateVisibility={this.setHidden} key={button.id} nameButton={button.innerText} idButton={button.id} />)
-
-    return <div className={"mx-contextMenu"} style={style}>
-            {ContextButtons}
-        </div>;
+        }
+        return (<div></div>)
+       
     }
+  
 }
 
 export default hot(DataMenu);
